@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> 대학생을 위한 중고품 거래 사이트,중고고씽</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        
+    </head>
+    <body>
+        <h1 id="title">Welcome to Jung-GoGoSing!</h1>  <!--color, font-size, font-family ,text-align   -->
+        
+       <button id="unselected" type="button" value="Login" onclick="location.href='login.html'">로그인</button> &nbsp;<!--border-->
+        <button id="selected_menu" type="button" value="Signup">회원가입</button> <!--border, bordercolor-->
+        
+        <div id="form">  <!--margin, padding, border--> 
+            <p>개인정보(필수)</p>
+            <form method="GET" action="https://wwww.example.com">
+            <p>
+                <label>이름: <input name="name" type="text" placeholder="이름을 입력해주세요" autofocus required /> </label>
+
+            </p>
+            <p>
+                성별:(선택사항)
+                남<input name="sex" type="radio" value="남자" />
+                여<input name="sex" type="radio" value="여자" />
+                비고<input name="sex" type="radio" value="비고" />
+            </p>
+            <p>
+                학년:
+                <input name="grade" type="number"  placeholder="1~4" min="1" max="4" step="1" required />
+            </p>
+            <p>
+                전화번호:
+                <input type="text" name="phonenumber" placeholder="010-XXXX-XXXX" required />
+
+            </p>
+            <p>
+                아이디:
+                <input type="text" name="id" placeholder="아이디를 입력하세요" required autocomplete="on" />
+
+            </p>
+            <p>
+                비밀번호:
+                <input type="password" name="pw" placeholder="비밀번호를 입력하세요" required autocomplete="off"/>
+
+            </p>
+            <p>
+                비밀번호 확인:
+                <input type="password" name="re_pw" placeholder="비밀번호 확인" required autocomplete="off"/>
+            </p>
+            <p>
+                귀하의 번호로 SMS수신됨에 동의하십니까?<input type="checkbox" name="agreement" value="귀하의 번호로 SMS 수신정보 제공에 동의하십니까?">
+            </p>
+            <input id="submit" type="submit" value="회원가입하기"/> <!--background-color width height-->
+            <input id="reset" type="reset" value = "초기화하기"/><!--background-color width height-->
+        </form>
+        </div>
+    </body>
+    
+</html>
+
